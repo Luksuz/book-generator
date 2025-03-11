@@ -71,7 +71,7 @@ async function structureOcrContent(content: string, customInput: string) {
 
   // Create the model with structured output
   const model = new ChatOpenAI({
-    modelName: "gpt-4o-mini",
+    modelName: "gpt-4o",
     temperature: 0.2,
   });
   
@@ -146,7 +146,7 @@ async function generateBookHtml(structuredContent: any) {
 
   // Create the model
   const model = new ChatOpenAI({
-    modelName: "gpt-4o-mini",
+    modelName: "gpt-4o",
     temperature: 0.2,
   });
   
